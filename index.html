@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pronunciation Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Pronunciation Test</h1>
+        <button id="start-btn">Start</button>
+        <p id="feedback"></p>
+        <div>
+          <input type="text" id="user-input" readonly />
+        </div>
+        <p>Total score: <span id="score">0</span>/10</p>
+
+        <table id="table-correct">
+          <thead>
+            <tr>
+              <th>Correct Words</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="correct-words"></tbody>
+          <td>Score:</td>
+          <td id="score-correct">0</td>
+        </table>
+        <br />
+        <table id="table-incorrect">
+          <thead>
+            <tr>
+              <th>Wrong Words</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="incorrect-words"></tbody>
+          <td>Score:</td>
+          <td id="score-incorrect">0</td>
+        </table>
+        <button id="print-btn" onclick="printPage()">Print</button>
+        <button id="restart-btn" onclick="restartPage()">Restart</button>
+        <div class="card-footer">
+          <small class="text-muted"
+            >English Learning Pronunciation -- May 2023</small
+          >
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
